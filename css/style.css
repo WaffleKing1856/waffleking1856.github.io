@@ -285,10 +285,6 @@ body {
   color: #1a2130;
 }
 
-.outro_stories {
-  background: url("../img/services/hero_placeholder.jpg") center / cover no-repeat;
-}
-
 /* ************TESTIMONIAL**************** */
 
 .testimonial__container {
@@ -1558,6 +1554,15 @@ iframe {
 /* Add white text with shadow for contact page banner */
 .main_contact .main__title,
 .main_contact .main__text_pages {
+  color: #fff;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Add white text with shadow for stories page banner */
+.main_stories .main__title,
+.main_stories .main__text_pages {
   color: #fff;
   text-shadow: 
     2px 2px 4px rgba(0, 0, 0, 0.8),
