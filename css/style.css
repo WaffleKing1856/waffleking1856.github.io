@@ -1364,6 +1364,10 @@ iframe {
     font-size: 20px;
     gap: 4rem;
   }
+
+  .stories-page__container {
+    padding-top: 80px;
+  }
 }
 
 @media (max-width: 61.936rem) {
