@@ -166,7 +166,7 @@ body {
 }
 
 .outro_home {
-  background: url("../img/home/you.png") center / cover no-repeat;
+  background: url("../img/home/you.png") center / contain no-repeat;
 }
 
 /* ************ABOUT**************** */
@@ -212,8 +212,14 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.outro_about {
-  background: url("../img/about/you.png") center / cover no-repeat;
+.about_alt .about__container {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 47.999rem) {
+  .about_alt .about__container {
+    flex-direction: column;
+  }
 }
 
 /* **************STORIES**************** */
@@ -358,28 +364,45 @@ body {
 /* ****************OUTRO**************** */
 
 .outro__container {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
+  min-height: 400px;
 }
 
-.outro__title {
-  margin-bottom: 1.25rem;
+.outro__content {
+  flex: 0 1 50%;
+  text-align: left;
+  padding-left: 2rem;
 }
 
-.outro__text {
-  max-width: 33.625rem;
-  line-height: 150%;
-  margin-bottom: 2.5rem;
-  letter-spacing: 0.02em;
+.outro__image {
+  flex: 0 1 50%;
+  height: 400px;
+  background: url("../img/about/you.png") center / contain no-repeat;
 }
 
 .outro__button {
-  padding: 1.25rem 3rem;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+@media (max-width: 47.999rem) {
+  .outro__container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .outro__content {
+    text-align: center;
+    padding-left: 0;
+  }
+  
+  .outro__image {
+    width: 100%;
+  }
 }
 
 /* ****************FOOTER**************** */
