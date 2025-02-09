@@ -166,13 +166,13 @@ body {
 }
 
 .outro_home {
-  background: url("../img/home/hero_placeholder.jpg") center / cover no-repeat;
+  background: url("../img/home/you.png") center / cover no-repeat;
 }
 
 /* ************ABOUT**************** */
 
 .main_about {
-  background: url("../img/about/background_placeholder.png") center / cover no-repeat;
+  background: url("../img/about/gil.png") center / cover no-repeat;
 }
 
 .about__container {
@@ -213,7 +213,7 @@ body {
 }
 
 .outro_about {
-  background: url("../img/about/hero_placeholder.jpg") center / cover no-repeat;
+  background: url("../img/about/you.png") center / cover no-repeat;
 }
 
 /* **************STORIES**************** */
@@ -358,8 +358,8 @@ body {
 /* ****************OUTRO**************** */
 
 .outro__container {
-  padding-top: 8.75rem;
-  padding-bottom: 8.75rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -419,7 +419,7 @@ body {
 }
 
 .main__container_pages {
-  padding-top: 300px;
+  padding-top: 217px;
 }
 
 .main_pages {
@@ -498,7 +498,7 @@ body {
 /* ****************CONTACT PAGE****************/
 
 .main_contact {
-  background: url("../img/contact/background_placeholder.png") center / cover no-repeat;
+  background: url("../img/contact/snow.png") center / cover no-repeat;
 }
 
 .contact__container {
@@ -1489,7 +1489,7 @@ iframe {
 
 /* Testimonials Page */
 .main_testimonials {
-  background: url("../img/stories/storiesback.png") center 35% / cover no-repeat;
+  background: url("../img/testimonials/puerto.png") center 35% / cover no-repeat;
 }
 
 .testimonials-page__container {
@@ -1525,4 +1525,22 @@ iframe {
 .item-testimonial__button:hover {
   background-color: #1a2130;
   color: #fff;
+}
+
+/* Add these styles to make banner text white */
+.main_testimonials .main__title,
+.main_testimonials .main__text_pages {
+  color: #fff;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Add white text with shadow for contact page banner */
+.main_contact .main__title,
+.main_contact .main__text_pages {
+  color: #fff;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    4px 4px 8px rgba(0, 0, 0, 0.6);
 }
