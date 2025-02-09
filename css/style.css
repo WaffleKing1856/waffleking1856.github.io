@@ -120,7 +120,7 @@ body {
 /* *****************HOME**************** */
 
 .main {
-  background: url("../img/home/beach.png") center / cover no-repeat;
+  background: url("/img/home/beach.png") center / cover no-repeat;
   min-height: 100vh;
 }
 
