@@ -143,6 +143,11 @@ body {
   font-size: 5.5rem;
   font-weight: 600;
   margin-bottom: 2rem;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8),
+               -2px -2px 8px rgba(0, 0, 0, 0.8),
+               2px -2px 8px rgba(0, 0, 0, 0.8),
+               -2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .main__text {
@@ -439,6 +444,14 @@ body {
 
 .main_pages {
   min-height: 676px !important;
+}
+
+.main_pages .main__title {
+  color: #FFFFFF;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8),
+               -2px -2px 8px rgba(0, 0, 0, 0.8),
+               2px -2px 8px rgba(0, 0, 0, 0.8),
+               -2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 /* ****************STORIES PAGE**************** */
