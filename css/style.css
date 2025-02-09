@@ -120,7 +120,7 @@ body {
 /* *****************HOME**************** */
 
 .main {
-  background: url("../img/home/background_placeholder.png") center / cover no-repeat;
+  background: url("../img/home/beach.png") center / cover no-repeat;
   min-height: 100vh;
 }
 
@@ -1383,7 +1383,6 @@ iframe {
 /* Add this to your CSS file */
 .cycle-button {
   display: block;
-  margin: 1rem auto 0;
   padding: 0.75rem 1.5rem;
   border: 2px solid #1a2130;
   border-radius: 30px;
@@ -1392,11 +1391,22 @@ iframe {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  touch-action: manipulation;
 }
 
-.cycle-button:hover {
+.cycle-button:hover,
+.cycle-button:focus {
   background-color: #1a2130;
   color: #fff;
+  outline: none;
+}
+
+.cycle-button:active {
+  background-color: #1a2130;
+  color: #fff;
+  transform: scale(0.98);
 }
 
 .image-controls {
@@ -1406,19 +1416,14 @@ iframe {
   margin-top: 1rem;
 }
 
-.cycle-button {
-  display: block;
-  padding: 0.75rem 1.5rem;
-  border: 2px solid #1a2130;
-  border-radius: 30px;
-  background-color: #fff;
-  color: #1a2130;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.cycle-button:hover {
-  background-color: #1a2130;
-  color: #fff;
+@media (max-width: 47.999rem) {
+  .image-controls {
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+  
+  .cycle-button {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9rem;
+  }
 }
