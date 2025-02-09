@@ -472,6 +472,23 @@ body {
   border-radius: 16px;
 }
 
+.stories-page__img video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.stories-page__img iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 9/16;  /* YouTube Shorts aspect ratio */
+  max-width: 360px;    /* Limit width to maintain phone-like dimensions */
+  margin: 0 auto;
+  display: block;
+  border-radius: 16px;
+}
+
 /* ****************CONTACT PAGE****************/
 
 .main_contact {
@@ -543,7 +560,6 @@ body {
 iframe {
   width: 100vw;
   height: 482px;
-  filter: grayscale(100%);
 }
 
 /* **************REVIEWS PAGE**************** */
@@ -1367,6 +1383,10 @@ iframe {
 
   .stories-page__container {
     padding-top: 80px;
+  }
+
+  .stories-page__img iframe {
+    max-width: 280px;  /* Slightly smaller on mobile */
   }
 }
 
