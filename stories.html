@@ -8,47 +8,107 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="header__container">
-      <a href="index.html" class="header__logo">
-        <img src="img/logo.png" alt="Logo" />
-      </a>
-      <nav class="header__nav">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-          <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
-          <li class="menu__item"><a href="stories.html" class="menu__link">Stories</a></li>
-          <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <section class="page__main main main_stories main_pages">
-    <div class="main__container main__container_pages">
-      <h1 class="main__title">Stories</h1>
-      <div class="main__text main__text_pages">
-        Subheading: Craft a compelling subheading that sparks curiosity.
-      </div>
-    </div>
-  </section>
-  <section class="page__stories stories-page">
-    <div class="stories-page__container">
-      <div class="stories-page__item">
-        <div class="stories-page__column">
-          <div class="stories-page__content">
-            <h2 class="stories-page__title title">Story Title</h2>
-            <div class="stories-page__text">
-              Story content goes here.
-            </div>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="header__logo logo"></a>
+        <div class="header__navigation">
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                  <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                  <li class="menu__item"><a href="stories.html" class="menu__link">Stories</a></li>
+                  <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+                </ul>
+                <a href="#" class="actions-header__button">Apply Here</a>
+              </nav>
+            </nav>
+          </div>
+          <div class="header__actions actions-header">
+            <button type="button" class="menu__icon icon-menu"><span></span></button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="footer__container">
-      <p>&copy; 2023 Your Company. All rights reserved.</p>
-    </div>
-  </footer>
+    </header>
+    <main class="page">
+      <section class="page__main main main_stories main_pages">
+        <div class="main__container main__container_pages">
+          <h1 class="main__title">Stories</h1>
+          <div class="main__text main__text_pages">
+            Subheading: Craft a compelling subheading that sparks curiosity.
+          </div>
+        </div>
+      </section>
+      <section class="page__stories stories-page">
+        <div class="stories-page__container">
+          <div class="stories-page__item">
+            <div class="stories-page__column">
+              <div class="stories-page__content">
+                <h2 class="stories-page__title title">Story Title</h2>
+                <div class="stories-page__text">
+                  <p>
+                    This is a story about me and my friend Mclean (seen in first image on right). 
+                    Being poor tech schoolers we were going to throw away our trash at the dumpster. 
+                  </p>
+                  <p>
+                    Upon arrival to the dumpster we found an unopened case of prime in the dumpster.
+                    Being the good people that we are, we decided to return it to the owner.
+                    Just kidding we stole the dumpster prime, and drank it with a smile on our face.
+                  </p>
+                </div>
+                <a href="#" class="stories-page__button button">Apply Here</a>
+              </div>
+              <div class="stories-page__img">
+                <img id="cycling-image" src="img/stories/mclean.png" alt="Story image" />
+                <div class="image-controls">
+                  <button onclick="previousImage()" class="cycle-button">Previous Image</button>
+                  <button onclick="cycleImage()" class="cycle-button">Next Image</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__outro outro outro_stories">
+        <div class="outro__container">
+          <h2 class="outro__title title">Talk To Us Heading</h2>
+          <div class="outro__text">
+            You can compose a friendly and informative paragraph that encourages visitors to engage with your
+            business.
+          </div>
+          <a href="#" class="outro__button button">Apply Here</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="#" class="footer__policy">Privacy Policy – Terms & Conditions</a>
+        <a href="" class="footer__logo logo"></a>
+        <div class="footer__copyright">Copyright © 2025 LOGO – All Rights Reserved</div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  <script>
+    const images = [
+      'img/stories/mclean.png',
+      'img/stories/digging in trash.png',
+      'img/stories/prime secured.png'
+    ];
+    let currentImageIndex = 0;
+    const imgElement = document.getElementById('cycling-image');
+
+    function previousImage() {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      imgElement.src = images[currentImageIndex];
+    }
+
+    function cycleImage() {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      imgElement.src = images[currentImageIndex];
+    }
+  </script>
 </body>
 </html> 

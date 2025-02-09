@@ -444,8 +444,11 @@ body {
 }
 
 .stories-page__img {
+  position: relative;
   max-width: 552px;
   height: 614px;
+  display: flex;
+  flex-direction: column;
 }
 
 .stories-page__img img {
@@ -1375,4 +1378,47 @@ iframe {
   .resources__container {
     grid-template-columns: 1fr;
   }
+}
+
+/* Add this to your CSS file */
+.cycle-button {
+  display: block;
+  margin: 1rem auto 0;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #1a2130;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #1a2130;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cycle-button:hover {
+  background-color: #1a2130;
+  color: #fff;
+}
+
+.image-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.cycle-button {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #1a2130;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #1a2130;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cycle-button:hover {
+  background-color: #1a2130;
+  color: #fff;
 }
