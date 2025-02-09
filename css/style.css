@@ -219,7 +219,8 @@ body {
 /* **************STORIES**************** */
 
 .main_stories {
-  background: url("../img/services/background_placeholder.png") center / cover no-repeat;
+  background: url("../img/stories/storiesback.png") center 35% / cover no-repeat;
+  min-height: 100vh;
 }
 
 .stories {
@@ -289,27 +290,40 @@ body {
 /* ************TESTIMONIAL**************** */
 
 .testimonial__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  padding-top: 8.75rem;
-  padding-bottom: 8.75rem;
-}
-
-.testiomonial__caption {
-  margin-bottom: 4rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .testimonial__title {
-  margin-bottom: 4rem;
-  font-size: 2rem;
-  max-width: 40.75rem;
-  line-height: 136%;
-  font-weight: 500;
+  margin-bottom: 3rem;
+  max-width: none;
+}
+
+.testimonial__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.item-testimonial {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.item-testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.item-testimonial__text {
+  font-style: italic;
+  line-height: 1.6;
+  color: #666;
+  margin-top: 1rem;
 }
 
 .item-testimonial__image {
@@ -1015,6 +1029,11 @@ iframe {
   .page__main {
     padding-bottom: 80px;
   }
+
+  .testimonial__row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 @media (min-width: 47.999rem) {
@@ -1321,8 +1340,7 @@ iframe {
   }
 
   .testimonial__title {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1.75rem;
   }
 
   .testiomonial__caption {
@@ -1425,5 +1443,16 @@ iframe {
   .cycle-button {
     padding: 0.625rem 1.25rem;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial__row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .testimonial__title {
+    font-size: 1.75rem;
   }
 }
