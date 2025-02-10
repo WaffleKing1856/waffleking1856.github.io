@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <title>Enter Code</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .code-input {
+      width: 200px;
+      padding: 10px;
+      font-size: 16px;
+      margin: 20px 0;
+      text-align: center;
+      border: 2px solid #333;
+      border-radius: 5px;
+    }
+    
+    .code-submit {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .code-submit:hover {
+      background-color: #555;
+    }
+
+    .code-form {
+      text-align: center;
+      margin: 50px auto;
+      max-width: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="header__logo logo"></a>
+        <div class="header__navigation">
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__main main main_code main_pages">
+        <div class="main__container main__container_pages">
+          <h1 class="main__title">Enter Code</h1>
+          <div class="main__text main__text_pages">
+            Enter your special code below
+          </div>
+          <div class="code-form">
+            <input type="text" class="code-input" id="codeInput" placeholder="Enter your code">
+            <br>
+            <button class="code-submit" onclick="checkCode()">Submit</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="#" class="footer__policy">Privacy Policy – Terms & Conditions</a>
+        <a href="" class="footer__logo logo"></a>
+        <div class="footer__copyright">Copyright © 2025 – All Rights Reserved</div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function checkCode() {
+      const code = document.getElementById('codeInput').value.toLowerCase();
+      if (code === 'suika') {
+        window.location.href = 'melon.html';
+      } else if (code === 'flap') {
+        window.location.href = 'flap.html';
+      } else {
+        alert('Invalid code. Please try again.');
+      }
+    }
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
