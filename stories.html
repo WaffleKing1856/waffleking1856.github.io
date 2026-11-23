@@ -4,18 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="img/favicon.png" />
-  <title>Stories</title>
+  <title>Stories | Matt Wright</title>
   <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="He's single, ladies. Read the stories, check the testimonials, and submit your girlfriend application." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Stories | Matt Wright" />
+  <meta property="og:description" content="He's single, ladies. Read the stories, check the testimonials, and submit your girlfriend application." />
+  <meta property="og:image" content="https://waffleking1856.github.io/img/og.jpg" />
+  <meta property="og:url" content="https://waffleking1856.github.io/stories.html" />
+  <meta name="twitter:card" content="summary_large_image" />
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="index.html" class="header__logo logo"></a>
+        <a href="index.html" class="header__logo logo">MW</a>
         <div class="header__navigation">
           <div class="header__menu menu">
             <nav class="menu__body">
-              <nav class="menu__body">
                 <ul class="menu__list">
                   <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
                   <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
@@ -26,10 +32,9 @@
                 </ul>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRPIPAGlCbBOyND1nj-HGD5_dfPDbE3AiBNY9m17BEuTh2nw/viewform?usp=dialog" class="actions-header__button">Apply Here</a>
               </nav>
-            </nav>
           </div>
           <div class="header__actions actions-header">
-            <button type="button" class="menu__icon icon-menu"><span></span></button>
+            <button type="button" class="menu__icon icon-menu" aria-label="Open menu"><span></span></button>
           </div>
         </div>
       </div>
@@ -43,7 +48,7 @@
           </div>
         </div>
       </section>
-      <section class="page__stories stories-page">
+      <section class="page__stories stories-page" id="dumpster-prime">
         <div class="stories-page__container">
           <div class="stories-page__item">
             <div class="stories-page__column">
@@ -62,7 +67,7 @@
                 </div>
               </div>
               <div class="stories-page__img">
-                <img id="cycling-image" src="img/stories/mclean.png" alt="Story image" />
+                <img id="cycling-image" src="img/stories/mclean.webp" alt="Dumpster Prime story photo" />
                 <div class="image-controls">
                   <button onclick="previousImage()" class="cycle-button">Previous Image</button>
                   <button onclick="cycleImage()" class="cycle-button">Next Image</button>
@@ -72,7 +77,7 @@
           </div>
         </div>
       </section>
-      <section class="page__stories stories-page">
+      <section class="page__stories stories-page" id="backflip">
         <div class="stories-page__container">
           <div class="stories-page__item">
             <div class="stories-page__column">
@@ -106,7 +111,7 @@
           </div>
         </div>
       </section>
-      <section class="page__stories stories-page">
+      <section class="page__stories stories-page" id="tattoos">
         <div class="stories-page__container">
           <div class="stories-page__item">
             <div class="stories-page__column">
@@ -115,7 +120,7 @@
                 <div class="stories-page__text">
                   <p>
                     In addition to my shot glass collection, I love to mark my travels with permanent ink. 
-                    Each tattoo tells a story of where I've been and dont really have too much meaning.
+                    Each tattoo tells a story of where I've been and don't really have too much meaning.
                   </p>
                   <p>
                     Scroll through the images to see each tattoo and learn about where I got them. <br>
@@ -129,7 +134,7 @@
                 </div>
               </div>
               <div class="stories-page__img">
-                <img id="tattoo-image" src="img/stories/tat3.png" alt="Tattoo Story" />
+                <img id="tattoo-image" src="img/stories/tat3.webp" alt="Tattoo Story" />
                 <div class="image-controls">
                   <button onclick="previousTattoo()" class="cycle-button">Previous Tattoo</button>
                   <button onclick="nextTattoo()" class="cycle-button">Next Tattoo</button>
@@ -154,8 +159,8 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <a href="#" class="footer__policy">Privacy Policy – Terms & Conditions</a>
-        <a href="" class="footer__logo logo"></a>
+        <div class="footer__policy">All applications are final. No refunds.</div>
+        <a href="index.html" class="footer__logo logo">MW</a>
         <div class="footer__copyright">Copyright © 2025 – All Rights Reserved</div>
       </div>
     </footer>
@@ -163,9 +168,9 @@
   <script src="js/script.js"></script>
   <script>
     const images = [
-      'img/stories/mclean.png',
-      'img/stories/digging in trash.png',
-      'img/stories/prime secured.png'
+      'img/stories/mclean.webp',
+      'img/stories/digging-in-trash.webp',
+      'img/stories/prime-secured.webp'
     ];
     let currentImageIndex = 0;
     const imgElement = document.getElementById('cycling-image');
@@ -181,12 +186,12 @@
     }
 
     const tattooImages = [
-      'img/stories/tat1.png',
-      'img/stories/tat2.png',
-      'img/stories/tat3.png',
-      'img/stories/tat4.png',
-      'img/stories/tat5.png',
-      'img/stories/gettingtatted.png'
+      'img/stories/tat1.webp',
+      'img/stories/tat2.webp',
+      'img/stories/tat3.webp',
+      'img/stories/tat4.webp',
+      'img/stories/tat5.webp',
+      'img/stories/gettingtatted.webp'
     ];
     let currentTattooIndex = 2;
     const tattooElement = document.getElementById('tattoo-image');

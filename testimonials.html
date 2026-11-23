@@ -4,18 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="img/favicon.png" />
-  <title>Testimonials</title>
+  <title>Testimonials | Matt Wright</title>
   <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="He's single, ladies. Read the stories, check the testimonials, and submit your girlfriend application." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Testimonials | Matt Wright" />
+  <meta property="og:description" content="He's single, ladies. Read the stories, check the testimonials, and submit your girlfriend application." />
+  <meta property="og:image" content="https://waffleking1856.github.io/img/og.jpg" />
+  <meta property="og:url" content="https://waffleking1856.github.io/testimonials.html" />
+  <meta name="twitter:card" content="summary_large_image" />
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="index.html" class="header__logo logo"></a>
+        <a href="index.html" class="header__logo logo">MW</a>
         <div class="header__navigation">
           <div class="header__menu menu">
             <nav class="menu__body">
-              <nav class="menu__body">
                 <ul class="menu__list">
                   <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
                   <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
@@ -26,10 +32,9 @@
                 </ul>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRPIPAGlCbBOyND1nj-HGD5_dfPDbE3AiBNY9m17BEuTh2nw/viewform?usp=dialog" class="actions-header__button">Apply Here</a>
               </nav>
-            </nav>
           </div>
           <div class="header__actions actions-header">
-            <button type="button" class="menu__icon icon-menu"><span></span></button>
+            <button type="button" class="menu__icon icon-menu" aria-label="Open menu"><span></span></button>
           </div>
         </div>
       </div>
@@ -45,11 +50,11 @@
       </section>
       <section class="page__testimonials testimonials-page">
         <div class="testimonials-page__container">
-          <div class="testimonials-page__item">
+          <div class="testimonials-page__item" id="nate">
             <div class="testimonials-page__content">
               <div class="item-testimonial">
                 <div class="item-testimonial__image">
-                  <img src="img/Testimonials/nate.png" alt="Nate" />
+                  <img loading="lazy" src="img/Testimonials/nate.webp" alt="Nate" />
                 </div>
                 <h4 class="item-testimonial__title">Nate Thomas</h4>
                 <div class="item-testimonial__caption">Overwatch Semi-Pro / AI Enjoyer</div>
@@ -63,11 +68,11 @@
             </div>
           </div>
 
-          <div class="testimonials-page__item">
+          <div class="testimonials-page__item" id="marci">
             <div class="testimonials-page__content">
               <div class="item-testimonial">
                 <div class="item-testimonial__image">
-                  <img src="img/Testimonials/marci.png" alt="Marci" />
+                  <img loading="lazy" src="img/Testimonials/marci.png" alt="Marci" />
                 </div>
                 <h4 class="item-testimonial__title">Marci Wright</h4>
                 <div class="item-testimonial__caption">Mother</div>
@@ -81,11 +86,11 @@
             </div>
           </div>
 
-          <div class="testimonials-page__item">
+          <div class="testimonials-page__item" id="wes">
             <div class="testimonials-page__content">
               <div class="item-testimonial">
                 <div class="item-testimonial__image">
-                  <img src="img/Testimonials/wes.png" alt="Wesley" />
+                  <img loading="lazy" src="img/Testimonials/wes.webp" alt="Wesley" />
                 </div>
                 <h4 class="item-testimonial__title">Wesley Heard</h4>
                 <div class="item-testimonial__caption">President of Women</div>
@@ -97,11 +102,11 @@
             </div>
           </div>
 
-          <div class="testimonials-page__item">
+          <div class="testimonials-page__item" id="jake">
             <div class="testimonials-page__content">
               <div class="item-testimonial">
                 <div class="item-testimonial__image">
-                  <img src="img/Testimonials/jake.png" alt="Jacob" />
+                  <img loading="lazy" src="img/Testimonials/jake.webp" alt="Jacob" />
                 </div>
                 <h4 class="item-testimonial__title">Jacob Dell</h4>
                 <div class="item-testimonial__caption">Famous YouTuber</div>
@@ -131,8 +136,8 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <a href="#" class="footer__policy">Privacy Policy – Terms & Conditions</a>
-        <a href="" class="footer__logo logo"></a>
+        <div class="footer__policy">All applications are final. No refunds.</div>
+        <a href="index.html" class="footer__logo logo">MW</a>
         <div class="footer__copyright">Copyright © 2025 – All Rights Reserved</div>
       </div>
     </footer>
